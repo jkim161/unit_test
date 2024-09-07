@@ -12,6 +12,7 @@ class unittestFunctions(unittest.TestCase):
         self.assertFalse(isAInt("34%"))
         self.assertFalse(isAInt("3.14"))
         self.assertFalse(isAInt(""))
+        self.assertFalse(isAInt("1a2b3c"))
     def test_isValidChoice(self):
         self.assertFalse(isValidChoice(""))
         self.assertFalse(isValidChoice("0"))
