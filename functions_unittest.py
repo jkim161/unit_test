@@ -13,6 +13,7 @@ class unittestFunctions(unittest.TestCase):
         self.assertFalse(isAInt("3.14"))
         self.assertFalse(isAInt(""))
         self.assertFalse(isAInt("1a2b3c"))
+
     def test_isValidChoice(self):
         self.assertFalse(isValidChoice(""))
         self.assertFalse(isValidChoice("0"))
@@ -23,6 +24,7 @@ class unittestFunctions(unittest.TestCase):
         self.assertTrue(isValidChoice("4"))
         self.assertTrue(isValidChoice("5"))
         self.assertTrue(isValidChoice("6"))
+
     def test_isValidName(self):
         self.assertFalse(isValidName(""))
         self.assertTrue(isValidName("Jay Kim"))
@@ -30,6 +32,7 @@ class unittestFunctions(unittest.TestCase):
         self.assertTrue(isValidName("K"))
         self.assertTrue(isValidName("qwerqwerqwerqwerqwerqwerqwerqw"))
         self.assertFalse(isValidName("qwerqwerqwerqwerqwerqwerqwerqwe"))
+
     def test_isValidPosition(self):
         self.assertTrue(isValidPosition("Guard"))
         self.assertTrue(isValidPosition("Forward"))
@@ -40,6 +43,7 @@ class unittestFunctions(unittest.TestCase):
         self.assertFalse(isValidPosition("C"))
         self.assertFalse(isValidPosition("123"))
         self.assertFalse(isValidPosition("John"))
+
     def test_isValidInputNumber(self):
         self.assertTrue(isValidInputNumber(5, 1, 10))
         self.assertFalse(isValidInputNumber(1, 5, 10))
